@@ -3,6 +3,9 @@
 
 import freetype
 
+MAX_MATRIX_HEIGHT = 7
+ARIAL_FONT_FILE_NAME = 'Arial.ttf'
+FONT_SIZE = 9
 
 class Bitmap(object):
     """
@@ -43,12 +46,12 @@ class Bitmap(object):
 
     def get_matrix(self):
         """Return a matrix representation of the bitmap's pixels."""
-        ret = [[] for i in min(range(self.height), 7)]
-        for y in min(range(self.height), 7):
+        ret = [[] for i in range(min(self.height, MAX_MATRIX_HEIGHT))]
+        for y in range(min(self.height, MAX_MATRIX_HEIGHT)):
             for x in range(self.width):
                 ret[y].append(4 if self.pixels[y * self.width + x] else 1)
-        while len(ret) < 7:
-            ret.append([0 for i in range(self.width)])
+        while len(ret) < MAX_MATRIX_HEIGHT:
+            ret.append([1 for i in range(self.width)])
         return ret
 
 
@@ -221,5 +224,5 @@ class Font(object):
 
 
 def get_arial_font_matrix(text):
-    fnt = Font('Arial.ttf', 9)
+    fnt = Font(ARIAL_FONT_FILE_NAME, FONT_SIZE)
     return fnt.render_text(text).get_matrix()
