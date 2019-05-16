@@ -4,8 +4,8 @@
 "Text To Commit History" is a tool I wrote to decorate your Github account's commit history calendar by (blatantly) abusing git's ability to accept commits _in the past_.
 
 ## Example Result
-Converting "Hello" text to some commits will create something like this on Github profile:
-![Hello](https://user-images.githubusercontent.com/7780269/57866862-4d6ac500-7815-11e9-9527-9784567e583f.png)
+Converting "Hello World" text to some commits will create something like this on your Github profile:
+![Hello World](https://user-images.githubusercontent.com/7780269/57891608-3e096d00-7851-11e9-8e6c-6f58534ba3f5.png)
 
 ## Usage
 1. Create a new Github repository to store your handiwork.
