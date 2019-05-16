@@ -17,5 +17,5 @@ Converting "Hello" text to some commits will create something like this on Githu
 4. Run the generated `text2commit.sh` from your home directory (or any non-git tracked dir) and watch it go to work.
 5. Wait... Seriously, you'll probably need to wait a day or two for the text2commit to show in your commit graph.
 
-## Removal:
+## Removal
 Fortunately if you regret your text2commit in the morning, removing it is fairly easy: delete the repo you created for your text2commit (and wait).
