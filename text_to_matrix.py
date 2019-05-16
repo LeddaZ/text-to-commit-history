@@ -43,10 +43,12 @@ class Bitmap(object):
 
     def get_matrix(self):
         """Return a matrix representation of the bitmap's pixels."""
-        ret = [[] for i in range(self.height)]
-        for y in range(self.height):
+        ret = [[] for i in min(range(self.height), 7)]
+        for y in min(range(self.height), 7):
             for x in range(self.width):
                 ret[y].append(4 if self.pixels[y * self.width + x] else 1)
+        while len(ret) < 7:
+            ret.append([0 for i in range(self.width)])
         return ret
 
 
