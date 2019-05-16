@@ -7,13 +7,13 @@ Converting "Hello" text to some commits will create something like this on Githu
 
 ### Usage:
 1. Create a new Github repo to store your handiwork.
-2.
+2. Install requirements:
 ```
 	pip3 install -r requirements.txt
 ```
-2. Run `text2commit.py` and follow the prompts for username, your text, offset, and repo name.
-3. Run the generated `text2commit.sh` from your home directory (or any non-git tracked dir) and watch it go to work.
-4. Wait... Seriously, you'll probably need to wait a day or two for the text2commit to show in your commit graph.
+3. Run `text2commit.py` (with Python 3) and follow the prompts for username, your text, offset, and repo name.
+4. Run the generated `text2commit.sh` from your home directory (or any non-git tracked dir) and watch it go to work.
+5. Wait... Seriously, you'll probably need to wait a day or two for the text2commit to show in your commit graph.
 
 ### Removal:
 Fortunately if you regret your text2commit in the morning, removing it is fairly easy: delete the repo you created for your text2commit (and wait).
