@@ -18,4 +18,4 @@ Converting "Hello" text to some commits will create something like this on Githu
 5. Wait... Seriously, you'll probably need to wait a day or two to show in your commit graph.
 
 ## Removal
-Fortunately if you regret your then, removing it is fairly easy: delete the repository you've created (and wait).
+Fortunately if you regret it then, removing it is fairly easy: delete the repository you've created (and wait).
