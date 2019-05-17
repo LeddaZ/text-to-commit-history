@@ -1,5 +1,5 @@
 # Text To Commit History
-> Write a text on your Github profile, with your commits history.
+> Write a large text on your Github profile, with your commits history (contribution graph).
 
 "Text To Commit History" is a tool I wrote to decorate your Github account's commit history calendar by (blatantly) abusing git's ability to accept commits _in the past_.
 
