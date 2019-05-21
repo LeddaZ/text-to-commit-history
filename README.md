@@ -13,7 +13,7 @@ Converting "Hello World" text to some commits will create something like this on
 ```
 	pip3 install -r requirements.txt
 ```
-3. Run `text_to_commit_history.py` (with Python 3) and follow the prompts for username, your text, offset, and repository name.
+3. Run `text_to_commit_history.py` (with Python 3) and follow the prompts for username, **your text**, offset, and repository name.
 4. Run the generated `text_to_commit_history.sh` from your home directory (or any non-git tracked dir) and watch it go to work. You'll propably have to wait some minutes for the running script.
 5. Wait... Seriously, you'll probably need to wait a day or two to show in your commit graph.
 
